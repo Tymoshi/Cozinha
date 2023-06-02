@@ -1,0 +1,238 @@
+                      /////////////index.html                    ///assent: pasta imagem     
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="index.html">Home</a>
+            <a class="cabecalho_menu_link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="apresentacao_conteudo_titulo">Eleve seu negócio digital a outro nível<strong class="titulo-destaque" > com um Back-end de qualidade!</strong></h1>
+            <p class="apresentacao_conteudo_texto" >Olá! Sou Pedro G. Timoteo, desenvolvedor Back-end com especialidade em HTML, JavaScript, CSS e C. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao_links">
+                <h2 class="apresentacao_links_subtitulo" >Acesse minhas redes: </h2>
+            <a class="apresentacao_links_link " href="https://github.com/Tymoshi">
+                <img src="./assent/github.png" alt="Github">
+                Github
+            </a>
+            <a class="apresentacao_links_link " href="https://github.com/Tymoshi">
+                <img src="./assent/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a class="apresentacao_links_link " href="https://github.com/Tymoshi">
+                <img src="./assent/twitch.png" alt="Twitch">
+                Twitch
+            </a>
+            <a class="apresentacao_links_link " href="https://github.com/Tymoshi">
+                <img src="./assent/instagram.png" alt="Instagram">
+                Instagram
+            </a>
+            <a class="apresentacao_links_link " href="https://github.com/Tymoshi">
+                <img src="./assent/twitter.png" alt="Twitter">
+                Twitter
+            </a>
+            <div>
+        </section>
+        <img src="./assent/Anti-Spiral.gif" alt="Deus">  
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Pedro G. Timoteo.</p>
+    </footer>
+</body>
+</html>
+
+
+
+////////////////////////////////////about.html                                
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="index.html">Home</a>
+            <a class="cabecalho_menu_link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="apresentacao_conteudo_titulo">Sobre mim</h1>
+            <p class="apresentacao_conteudo_texto">Sun Tzu foi um general chinês que viveu no século IV AC e que no
+                comando do exército real de Wu acumulou inúmeras vitórias,
+                derrotando exércitos inimigos e capturando seus comandantes.
+                Foi um profundo conhecedor das manobras militares e escreveu A
+                ARTE DA GUERRA, ensinando estratégias de combate e táticas de
+                guerra.
+                Uma das histórias mais repetidas sobre Sun Tzu descreve o modo
+                pelo qual ele empregava as "concubinas" para demonstrar, no palácio,
+                ao rei, exemplos de manobras de combate e deslocamentos de
+                tropas.</p>
+            <p class="apresentacao_conteudo_texto">Seus princípios podem ser aplicados, não só
+                nas táticas militares, como também, em
+                quase todos os ramos da atividade humana.
+                Seus ensinamentos alcançam todos os
+                indivíduos no confronto com seus oponentes,
+                exércitos contra exércitos e empresas
+                contra suas concorrentes.</p>
+        </section>
+        <img src="./assent/Anti-Spiral.gif" alt="Deus">  
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Pedro G. Timoteo.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+                   //////styles: pasta css              ///////style.css
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Cores:
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #3F4E4F;
+
+    --cor-primaria: #0F0E0E;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #8B9A46;
+    --cor-hover: #541212; */
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #8B9A46;
+    --cor-hover: #541212;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding:  5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao_links_link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links_link:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
